@@ -1,0 +1,91 @@
+/* styles for the body and background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height of the viewport */
+    background: url('../Chatbot/Background.jpg') no-repeat center center fixed; /* Set your background image */
+    background-size: cover; /* Cover the entire screen */
+}
+
+/* Chat container styling */
+.chat-container {
+    width: 400px; /* Width of the chat container */
+    height: 600px; /* Height of the chat container */
+    margin: 50px auto; /* Center the container */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Messages area styling */
+.messages {
+    flex: 1; /* Allow this section to grow */
+    padding: 20px; /* Padding around messages */
+    overflow-y: auto; /* Scroll when there are too many messages */
+}
+
+/* Individual message styling */
+.message {
+    margin-bottom: 10px; /* Space between messages */
+    padding: 10px 15px; /* Padding inside messages */
+    border-radius: 15px; /* Rounded corners for messages */
+    max-width: 75%; /* Limit message width */
+    clear: both; /* Clear previous floats */
+}
+
+/* User message styling */
+.user {
+    background-color: #007bff; /* Blue background for user messages */
+    color: white; /* White text */
+    align-self: flex-end; /* Align to the right */
+}
+
+/* Bot message styling */
+.bot {
+    background-color: #e2e2e2; /* Light gray background for bot messages */
+    color: black; /* Black text */
+    align-self: flex-start; /* Align to the left */
+}
+
+/* Input container styling */
+.input-container {
+    display: flex; /* Flexbox for input and button */
+    padding: 10px; /* Padding around input */
+    background-color: #f9f9f9; /* Light background */
+    border-top: 1px solid #ddd; /* Top border */
+}
+
+/* Input field styling */
+input[type="text"] {
+    flex: 1; /* Take up all available space */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #ddd; /* Border */
+    border-radius: 20px; /* Rounded corners */
+    margin-right: 10px; /* Space between input and button */
+    outline: none; /* Remove outline */
+    transition: border 0.3s; /* Smooth border transition */
+}
+
+/* Input focus state */
+input[type="text"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
