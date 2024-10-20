@@ -1,0 +1,117 @@
+/* General styling for body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("../Chatbot/Background.jpg") no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Chat container styling */
+.chat-container {
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Chat box styling */
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Style for each message */
+.chat-box div {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    clear: both;
+}
+
+/* User message */
+.chat-box div:nth-child(odd) {
+    background-color: #007bff;
+    color: #fff;
+    text-align: right;
+    margin-left: auto;
+}
+
+/* Bot message */
+.chat-box div:nth-child(even) {
+    background-color: #e2e2e2;
+    color: #333;
+}
+
+/* Message input form */
+form {
+    display: flex;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Input field */
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    margin-right: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+/* Input focus state */
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+/* Send button */
+button {
+    padding: 12px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on send button */
+button:hover {
+    background-color: #218838;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 400px) {
+    .chat-container {
+        width: 95%;
+        height: 450px;
+    }
+}
+
+/* Smooth scrolling for messages */
+.chat-box {
+    scroll-behavior: smooth;
+}
