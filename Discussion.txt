@@ -5,3 +5,6 @@
   **AI SOLUTION IDEA**
 Healthcare - AI-Powered Diagnosis Assistant:
 Create a system that uses machine learning models to assist doctors in diagnosing diseases. It could analyze medical images, patient records, and symptoms to suggest potential diagnoses, improving accuracy and speed in healthcare delivery.
+
+
+M Ndumo - Pingo
