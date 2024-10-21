@@ -1,0 +1,40 @@
+Potential Risks 
+1.	Data Privacy and Security – Since we will be handling sensitive medical and personal data of patients. Hacks or breaches can lead to legal issues, financial penalties or loss of trust from the patients.
+
+Solution
+-	we can implement end to end encryption for all the data transmitted 
+-	we can use secure cloud storage and follow best practices for securing databases 
+-	we must also monitor and audit sensitive data from time to time
+
+2.	Incorrect Diagnosis – the bot might assign patients to the wrong specialist or mix symptoms, leading to medical mismanagement
+
+Solution
+-	Clearly state the bot’s role as a scheduling assistant and not a diagnostic tool
+-	Involve medical pro’s in designing the symptom matching algorithms 
+-	Provide a disclaimer that users should go to direct medical advice for severe medical issues 
+
+3.	Appointment scheduling errors – the bot may schedule, cancel or postpone appointments incorrectly leading to overbooking or users missing their appointments
+
+Solution
+-	Use real time integration with hospital scheduling system
+-	Test the system extensively in real-world environments before full deployment 
+-	Have a live person in the loop mechanism where complex scheduling requests are reviewed manually
+
+4.	System being down and reliability – if the bot goes offline or unavailable, patients may not be able to book appointments or access important services.
+
+Solution
+-	Regularly update and maintain the system 
+-	Make sure that the bot is able to handle peak usage times without crashing
+-	Have backup servers for failures 
+
+5.	Legal and Liability issues – if the bot gives incorrect information or mishandles personal data, the hospital or clinic might face lawsuits 
+
+Solution
+-	Make sure the bot does not provide medical advice but only handles the administrative tasks 
+-	Have a clear communication about the limitations of the AI system
+
+6.	User friendliness or experience – if the bot is not user-friendly patients may have difficulty using it, leading to frustration.
+
+Solution
+-	Conduct a usability testing with a lot of users
+-	Make sure the bot has a smooth conversation flow and allow users to easily modify or cancel actions
