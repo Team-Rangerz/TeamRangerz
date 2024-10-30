@@ -1,0 +1,8 @@
+import pyttsx3 
+
+# Initializes Text To Speech 
+text_speech = pyttsx3.init()
+
+answer = "Welcome To Ranger Medical Bot:"
+text_speech.say(answer)
+text_speech.runAndWait()
